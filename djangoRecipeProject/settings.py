@@ -121,12 +121,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-#STATIC_ROOT = '/Users/lauralemmo/Desktop/djangoRecipeProject/static/'
+STATIC_ROOT = '/Users/lauralemmo/Desktop/djangoRecipeProject/static/'
 
-STATICFILES_DIRS = [
+#STATICFILES_DIRS = [
      #Percorso in cui si trovano i tuoi file statici
-    os.path.join(BASE_DIR, 'static')
-]
+#    os.path.join(BASE_DIR, 'static')
+#]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
