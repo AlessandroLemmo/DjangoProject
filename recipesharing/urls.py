@@ -25,4 +25,6 @@ urlpatterns = [
     path('getMyRecipes', views.getMyRecipes, name='getMyRecipes'),
     path('removeRecipe/<int:recipe_id>', views.removeRecipe, name='removeRecipe'),
     path('recipe/update/<int:recipe_id>', views.updateRecipe, name='updateRecipe'),
+
+    path('static/images/home.jpg', views.index, name='index')
 ]
