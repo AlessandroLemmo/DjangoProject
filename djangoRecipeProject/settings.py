@@ -30,8 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = ["djangorailway-production.up.railway.app", "127.0.0.1", "localhost", "web-production-77cb.up.railway.app"]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://djangorailway-production.up.railway.app']
-
+#CSRF_TRUSTED_ORIGINS = ['https://djangorailway-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-77cb.up.railway.app']
 
 # Application definition
 
