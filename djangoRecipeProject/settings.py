@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+from django.contrib import staticfiles
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,8 +27,8 @@ SECRET_KEY = 'django-insecure-2643w)wlm3rmifhhii16!a&#p-+e8&cgi(mw*nu2syouir9z5j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["djangorailway-production.up.railway.app", "127.0.0.1", "localhost", "web-production-77cb.up.railway.app"]
-
+#ALLOWED_HOSTS = ["djangorailway-production.up.railway.app", "127.0.0.1", "localhost", "web-production-77cb.up.railway.app"]
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = ['https://djangorailway-production.up.railway.app']
 
@@ -122,7 +124,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = '/Users/lauralemmo/Desktop/djangoRecipeProject/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 
 #STATICFILES_DIRS = [
