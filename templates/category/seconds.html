@@ -105,9 +105,9 @@
         <!-- se ci sono risultati -->
         {% if recipes %}
             <h4 style="text-align: center">Risultati della ricerca per "{{ searchByTitleQuery }}"</h4>
-            <ul>
+            <ul style="margin-right: 30px">
                 {% for recipe in recipes %}
-                    <a class="badge badge-secondary p-3 btn-block" href="{% url 'recipeDetail' recipe.id %}">
+                    <a style="color: black; border-bottom: 3px solid darkgray" class="badge badge-secondary p-3 btn-block" href="{% url 'recipeDetail' recipe.id %}">
                         {{ recipe.title }}
                     </a>
                     <br>
